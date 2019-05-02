@@ -1,0 +1,275 @@
+// ====================
+//      TYPOGRAPHY
+// ====================
+
+h1 {
+  color: lighten($mamba, 25%);
+  font-size: 3.6rem;
+  font-family: $font-family--secondary;
+  padding: 0 em(5px) 0 em(5px);
+  background: transparent;
+  text-shadow: 2px 2px 4px lighten(navy, 30%);
+  // text-transform: capitalize;
+  letter-spacing: -2;
+
+  @include mq(large) {
+    margin-bottom: 0;
+    margin-top: em(8px);
+  }
+}
+
+h2 {
+  display: block;
+  font-family: $font-family--secondary;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  font-size: 2rem;
+  background: rgba(149, 129, 154, 0.6);
+  color: $white;
+  border-top: solid $white 2px;
+  border-bottom: solid $white 2px;
+  padding: em(10px);
+  margin-top: em(20px);
+  margin-bottom: em(20px);
+  font-weight: bold;
+  text-shadow: 4px 4px 2px navy;
+  // text-transform: uppercase;
+}
+
+h3 {
+  color: $color-primary;
+  font-size: 1rem;
+  font-family: $font-family--primary;
+  text-align: center;
+
+}
+
+h4 {
+  color: $mamba;
+  font-size: 1.5rem;
+  font-family: $font-family--primary;
+  background: transparent;
+
+  @include mq(large) {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+}
+
+.main-nav {
+  a {
+    color: $mamba;
+    text-decoration: none;
+    font-size: 2rem;
+    font-family: $font-family--primary;
+    margin-left: em(3px);
+    margin-right: em(3px);
+
+    &:hover {
+      color: lighten($mamba, 25%);
+    }
+  }
+
+  li {
+    padding: em(8px) em(4px) em(4px) em(4px);
+
+    &:hover {
+      opacity: 0.9;
+      transform: scale(1.2);
+      transition: all 100ms cubic-bezier(.19,-0.32,.69,1.33);
+    }
+  }
+}
+
+.overlay-info {
+  font-family: $font-family--primary;
+  font-size: 1.1rem;
+  line-height: 1.4;
+  color: $white;
+  text-align: center;
+  list-style-type: circle;
+  padding-left: em(25px);
+  padding-right: em(25px);
+}
+
+h5 {
+  color: $white;
+  font-family: $font-family--primary;
+  font-size: 1.4rem;
+  text-align: center;
+  margin-bottom: 0;
+}
+
+#bio {
+
+  p {
+    @include mq(large) {
+      max-width: em(550px);
+    }
+  }
+
+}
+
+.bio-text {
+  @include mq(large) {
+    margin-top: em(-30px);
+  }
+}
+
+.call-action {
+  font-family: $font-family--secondary;
+  color: lighten($mamba, 10%);
+  font-size: em(24px);
+  text-align: center;
+  letter-spacing: 1.1;
+  background: transparent;
+}
+
+
+// .main-title {
+//   font-family: $font-family-secondary;
+//   color: $white;
+//   text-shadow: 3px 3px 3px $color-text;
+//   margin-left: em(20px);
+//   padding-top: em(15px);
+//   font-size: em(25px);
+//   display: inline-block;
+//
+//   @include mq(large) {
+//     font-size: em(50px);
+//     padding-top: em(10px);
+//   }
+// }
+//
+// .username {
+//   color: $white;
+//   font-size: em(16px);
+//   margin-top: em(35px);
+//
+//   @include mq(large) {
+//     font-size: em(20px);
+//   }
+// }
+//
+// .username-item {
+//   margin-top: em(10px);
+//   margin-bottom: em(10px);
+//   margin-left: em(15px);
+//
+//   @include mq(large) {
+//     padding-top: em(10px);
+//   }
+// }
+//
+// h2 {
+//   color: $color-accent;
+//   font-weight: $font-weight--medium;
+//   font-size: em(18px);
+//   background: $white;
+//   margin-left: em(15px);
+//
+//   @include mq(medium) {
+//     font-size: em(22px);
+//   }
+// }
+//
+// h3 {
+//   color: $color-text;
+//   text-align: center;
+//   text-transform: uppercase;
+//
+//   @include mq(medium) {
+//     text-align: left;
+//     margin-left: em(15px);
+//   }
+// }
+//
+// #social-stats h4 {
+//   color: $color-hdln;
+//   font-size: em(26px);
+//   margin-right: auto;
+//   margin-left: auto;
+//   margin-top: em(40px);
+//
+//   span {
+//     display: block;
+//     font-weight: $font-weight--thin;
+//     margin-left: auto;
+//     margin-right: auto;
+//   }
+// }
+//
+// a {
+//   text-decoration: none;
+//   color: $color-secondary;
+//
+//   &:visited {
+//     color: $color-secondary;
+//   }
+//
+//   &:hover {
+//     color: $color-shade;
+//   }
+// }
+//
+//
+// p.info {
+//   color: $color-accent;
+//   font-weight: $font-weight--bold;
+//   font-size: em(12px);
+//   text-align: center;
+//   margin-bottom: em(5px);
+//
+//   @include mq(medium) {
+//     font-size: em(16px);
+//     text-align: left;
+//     font-weight: $font-weight--medium;
+//     line-height: 1.25;
+//     margin-left: em(20px);
+//     margin-right: auto;
+//     margin-top: em(30px);
+//   }
+// }
+//
+// p.info a {
+//   @include mq(medium) {
+//     font-size: em(16px);
+//   }
+// }
+//
+// .name {
+//   @include mq(medium) {
+//     font-weight: $font-weight--bold;
+//     color: darken($color-highlight, 10%);
+//   }
+// }
+//
+// .group p {
+//   max-width: em(175px);
+// }
+//
+// #message-user h3 {
+//   margin-left: em(35px);
+// }
+//
+// #settings h3 {
+//   margin-left: em(35px);
+// }
+//
+// .activity-feed {
+//   color: darken($color-highlight, 10%);
+//   font-size: em(12px);
+//
+//   @include mq(medium) {
+//     font-size: em(14px);
+//   }
+//
+//   @include mq(large) {
+//     font-size: em(16px);
+//   }
+// }
+//
+// .date-lg {
+//   font-size: em(14px);
+// }

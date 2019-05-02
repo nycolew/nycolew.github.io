@@ -1,0 +1,48 @@
+// ==================
+//    WIDGETS
+// ==================
+
+
+.spotify-embeds {
+  width: 100%;
+  padding: 50px;
+}
+
+.spotify-embed {
+  background: $chambray;
+
+  &:not(:last-of-type) {
+    margin-bottom: 10px;
+  }
+
+  iframe {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    transition: opacity 0.125s;
+    .js & {
+      opacity: 0;
+
+      &.loaded {
+        opacity: 1;
+      }
+    }
+  }
+}
+
+
+.gr_grid_container {
+  width: 80%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.gr_grid_book_container {
+  /* customize book cover container div here */
+  float: left;
+  width: 98px;
+  height: 160px;
+  padding: 0px 0px;
+  overflow: hidden;
+}

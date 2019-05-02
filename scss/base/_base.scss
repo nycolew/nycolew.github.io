@@ -1,0 +1,38 @@
+// ==============================
+//        BASE STYLES
+// ==============================
+
+
+* {
+  box-sizing: border-box;
+  font-family: $font-family--primary;
+  background: $firefly;
+  scroll-behavior: smooth;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+p {
+  font-size: $base__font-size;
+  color: $color-text;
+}
+
+body {
+  margin: 0;
+  padding-bottom: em(100px);
+  align-items: center;
+
+  @include mq(large) {
+    padding-bottom: 0;
+    margin-bottom: 0; 
+  }
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}

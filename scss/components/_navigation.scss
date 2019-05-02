@@ -1,0 +1,112 @@
+// ================
+//    NAVIGATION
+// ================
+
+.main-nav {
+  @include flexify($dir: row, $just: space-between);
+}
+
+nav,
+#desk-main-nav,
+.main-nav,
+.main-nav li {
+  @include mq(large) {
+    background: rgba(12, 22, 39, 0);
+  }
+}
+
+.mobile-nav,
+#footer-nav {
+  background: transparent;
+
+  svg,
+  li,
+  a {
+    background: transparent;
+  }
+}
+
+.mobile-nav {
+  @include mq(large) {
+    display: none;
+  }
+}
+
+.social2 li {
+  background: transparent;
+  padding-left: em(25px);
+  padding-right: em(25px);
+
+  svg {
+    background: transparent;
+    width: em(50px);
+    height: em(50px);
+
+    &:hover {
+      transform: scale(1.2) rotate(360deg);
+      transition: transform 500ms
+    }
+  }
+}
+
+.main-nav {
+  @include mq(large){
+    li {
+      padding-left: em(10px);
+      padding-right: em(10px);
+    }
+  }
+}
+
+
+// .side-nav {
+//   background: $color-accent;
+//   height: em(75px);
+//   width: 100%;
+//   position: fixed;
+//   z-index: 50;
+//   top: em(75px);
+//   overflow-y: hidden;
+//   padding: em(8px);
+//
+//   ul {
+//     @include flexify($dir: row, $just: space-around);
+//
+//     @include mq(large) {
+//       @include flexify($dir: column, $just: space-around);
+//       padding-left: em(45px);
+//     }
+//   }
+//
+//   svg {
+//     width: em(30px);
+//     height: auto;
+//
+//     path {
+//       fill: $color-shade;
+//     }
+//
+//     @include mq(medium) {
+//       height: em(45px);
+//       padding-bottom: em(20px);
+//     }
+//
+//     @include mq(large) {
+//       height: em(60px);
+//     }
+//   }
+//
+//   @include mq(large) {
+//     height: 100%;
+//     width: em(150px);
+//     top: em(100px);
+//     left: 0;
+//     overflow-x: hidden;
+//   }
+// }
+//
+// svg.current {
+//     path {
+//       fill: $white;
+//     }
+// }

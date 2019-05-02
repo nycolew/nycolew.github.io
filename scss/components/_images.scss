@@ -1,0 +1,82 @@
+// ==================
+//      IMAGES
+// ==================
+
+.cover-photo {
+  width: 100vw;
+}
+
+.header-profile {
+  width: em(150px);
+  height: em(150px);
+  border-radius: 50%;
+  border: 3px solid $mamba;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 0;
+
+  @include mq(large) {
+    display: none;
+  }
+}
+
+#hero {
+  background: linear-gradient($firefly, transparent 40%, $firefly 99%),
+              url('../img/galaxy3.jpg') center no-repeat;
+}
+
+#hero2 {
+  background: linear-gradient(to right, transparent, $firefly 70%),
+              url('../img/galaxy3.jpg') center no-repeat;
+}
+
+svg:not(.signature) {
+  width: em(30px);
+  height: em(30px);
+  fill: $mamba;
+}
+
+.signature {
+  width: 25%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: em(-35px);
+  fill: darken($mamba, 5%);
+
+  @include mq(large) {
+    width: 40%;
+    margin-top: em(-70px);
+  }
+}
+
+.stroke-signature {
+  stroke-dasharray: 2500;
+  stroke-dashoffset: 2500;
+  stroke: $mamba;
+  animation: hancock 4s linear forwards;
+}
+
+.screenshot {
+  width: 70%;
+  border: 3px solid lighten($firefly, 50%);
+  border-radius: 20px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#large-profile {
+  display: none;
+
+  @include mq(large) {
+    display: inline;
+    width: em(225px);
+    height: em(225px);
+    margin-top: em(100px);
+    margin-bottom: em(20px);
+    margin-right: em(50px);
+    border-radius: 50%;
+    border: 3px solid $mamba;
+  }
+}
