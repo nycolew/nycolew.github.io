@@ -27,7 +27,7 @@ if ( $(window).width() < 768 ) {
       loop: true,
       nav: true
     });
-  })
+  });
 }
 
 
@@ -59,11 +59,3 @@ var waypoint = $('#bio').waypoint(function(direction) {
 {
   offset: 125
 });
-
-// var waypoints = $('#bio').waypoint(function(direction) {
-//   if (direction === 'down') {
-//     pageHeader.style.background = '#0C1627';
-//   else if (direction === 'up') {
-//     pageHeader.style.background = 'rgba(12, 22, 39, 0)';
-//   }
-// });
