@@ -36,6 +36,11 @@
   display: block;
   margin-left: auto;
   margin-right: auto;
+
+  @include mq(large) {
+    width: 95%;
+    padding-left: em(50px); 
+  }
 }
 
 .gr_grid_book_container {
