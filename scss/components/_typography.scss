@@ -119,6 +119,8 @@ h5 {
 }
 
 .call-action {
+  display: none;
+
   @include mq(large) {
     font-family: $font-family--secondary;
     color: lighten($mamba, 10%);
